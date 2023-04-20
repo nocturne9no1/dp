@@ -6,7 +6,7 @@ li,
 strong,
 div,
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif !important;
 }
 
 @mixin ellipsis($lines: 1) {
