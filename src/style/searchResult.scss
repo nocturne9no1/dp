@@ -239,3 +239,147 @@ $theme: green;
     }
   }
 }
+
+.news-1 {
+  .top {
+    .header {
+      display: flex;
+      padding: 4px 8px;
+      align-items: center;
+      justify-content: space-between;
+
+      .menu {
+        svg {
+          width: 32px;
+          height: 32px;
+        }
+        svg path {
+          stroke: #2961d6;
+        }
+      }
+
+      strong {
+        font-size: 26px;
+        font-weight: 700;
+      }
+
+      .search {
+        svg {
+          width: 24px;
+          height: 24px;
+
+          path {
+            stroke: #2961d6;
+          }
+        }
+      }
+    }
+
+    .navigation {
+      display: flex;
+      background-color: #2961d6;
+      padding: 0 12px;
+      // justify-content: space-between;
+      gap: 12px;
+      span {
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 12px 0;
+      }
+      span:last-child {
+        color: #d66538;
+        border-bottom: 3px solid #ffff54;
+      }
+    }
+
+    .breadcrumb {
+      display: flex;
+      font-size: 12px;
+      align-items: center;
+      padding: 8px 16px;
+      gap: 12px;
+      border-bottom: 1px solid #cfcfcf;
+
+      span + span::before {
+        width: 8px;
+        height: 8px;
+        content: ">";
+        margin-right: 12px;
+      }
+    }
+  }
+
+  .contents {
+    .title {
+      margin-top: 12px;
+      padding: 0 16px;
+      display: block;
+      font-size: 22px;
+      color: #2961d6;
+      font-weight: 700;
+    }
+
+    .sub-title {
+      padding: 0 16px;
+      font-size: 14px;
+      margin-top: 12px;
+
+      & + .sub-title {
+        margin-top: 4px;
+      }
+    }
+
+    .info-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+      margin-top: 24px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid #c5c3c3;
+      .date {
+        font-size: 12px;
+        color: #6e6e6e;
+      }
+
+      .buttons {
+        display: flex;
+        gap: 8px;
+        > div {
+          padding: 4px;
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid #a7a7a7;
+        }
+      }
+    }
+
+    .content {
+      padding: 0 16px;
+      padding-top: 12px;
+      padding-bottom: 20px;
+      .chroma {
+        width: calc(100% - 8px);
+        margin: 0 auto;
+        height: 240px;
+        background-color: #6afb46;
+      }
+
+      .text {
+        margin-top: 16px;
+
+        p {
+          font-size: 14px;
+          line-height: 1.2em;
+        }
+
+        p + p {
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+}
