@@ -187,6 +187,14 @@ $theme: green;
       border: 1px solid #a7a7a7;
       border-radius: 50%;
       margin-right: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+
+      img {
+        width: 25px;
+      }
     }
     span {
       font-size: 15.75px;

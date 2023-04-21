@@ -1,7 +1,7 @@
 import { ReactComponent as IconDots } from "../../assets/dot_menu.svg";
 import { Link } from "react-router-dom";
 
-const NewsCard = ({ newspaper, title, content, index }) => {
+const NewsCard = ({ newspaper, title, content, index, imgSource }) => {
   return (
     <Link
       className="naver-news-card"
@@ -13,7 +13,9 @@ const NewsCard = ({ newspaper, title, content, index }) => {
       to={`/news-${index}`}
     >
       <div className="header">
-        <div className="logo"></div>
+        <div className="logo">
+          <img src={imgSource}></img>
+        </div>
         <span>{newspaper}</span>
         <div className="menu-icon">
           <IconDots />
