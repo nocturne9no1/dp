@@ -1,5 +1,5 @@
 import { ReactComponent as IconDots } from "../../assets/dot_menu.svg";
-import { Link, useNavigate, NavLink } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 
 const NewsCard = ({ newspaper, title, content, index, imgSource, time }) => {
   let navigate = useNavigate();
