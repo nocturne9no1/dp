@@ -181,6 +181,7 @@ $theme: green;
     display: flex;
     align-items: center;
     position: relative;
+
     .logo {
       width: 24px;
       height: 24px;
@@ -320,10 +321,16 @@ $theme: green;
       font-weight: 700;
     }
 
+    .lastpage-title {
+      color: black;
+    }
+
     .sub-title {
       padding: 0 16px;
       font-size: 14px;
       margin-top: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
 
       & + .sub-title {
         margin-top: 4px;
@@ -384,6 +391,40 @@ $theme: green;
   }
 }
 
+// 마지막 페이지 관련
+.lastpage-news-title {
+  font-weight: bold;
+  font-size: 24px;
+  padding: 5px 0;
+}
+
+.news-1 {
+  .navigation2 {
+    border-bottom: 1px solid rgb(242, 242, 242);
+    border-top: 1px solid rgb(242, 242, 242);
+    display: flex;
+    padding: 0 12px;
+    justify-content: space-between;
+    gap: 12px;
+    span {
+      font-size: 16px;
+      font-weight: 700;
+      padding: 12px 0;
+    }
+    .pink-span {
+      color: rgb(216, 47, 138);
+      border-bottom: 3px solid rgb(216, 47, 138);
+    }
+  }
+
+  .search2 {
+    svg {
+      width: 24px;
+      height: 24px;
+
+      path {
+        stroke: black;
+=======
 .news-2 {
   .header {
     height: 50px;

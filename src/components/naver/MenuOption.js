@@ -8,7 +8,7 @@ const MenuOption = () => {
       </div>
       <div className="option">
         <div className="option-icon"></div>
-        <span className="text">옵셥</span>
+        <span className="text">옵션</span>
       </div>
     </div>
   );
