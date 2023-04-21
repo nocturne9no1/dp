@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@400;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto+Condensed:wght@300&display=swap");
 span,
 li,
 strong,
 div,
-p {
+p,
+b {
   font-family: "Roboto", sans-serif !important;
 }
 
@@ -172,11 +173,15 @@ $theme: green;
   padding: 15px 18px 18px;
   margin-top: 9px;
   background-color: white;
-  &:visited {
-    .title {
-      color: #9941a1;
+
+  &.visited {
+    .title,
+    .title span,
+    .title b {
+      color: #9941a1 !important;
     }
   }
+
   .header {
     display: flex;
     align-items: center;
@@ -200,6 +205,22 @@ $theme: green;
     span {
       font-size: 15.75px;
       font-weight: 500;
+
+      & + span {
+        color: #7b7b7b;
+        margin-left: 6px;
+        align-items: center;
+        display: flex;
+        padding-top: 0.5px;
+
+        &::before {
+          width: 1px;
+          height: 12px;
+          background-color: #a7a7a7;
+          content: "";
+          margin-right: 6px;
+        }
+      }
     }
     .menu-icon {
       position: absolute;
@@ -213,6 +234,10 @@ $theme: green;
     font-size: 18.9px;
     font-weight: normal;
     line-height: 1.4rem;
+
+    b {
+      font-weight: 700;
+    }
   }
 
   .content-area {
@@ -225,9 +250,14 @@ $theme: green;
       font-size: 16.8px;
       word-break: break-all;
       line-height: 1.3em;
+
+      b {
+        font-weight: 700;
+      }
     }
 
     .chroma {
+      border-radius: 8px;
       width: 90px;
       height: 90px;
       flex-shrink: 0;
@@ -242,8 +272,23 @@ $theme: green;
     &:nth-child(3),
     &:nth-child(2),
     &:nth-child(1) {
+      .title > span,
+      .title b,
       .title {
         color: #9941a1;
+      }
+    }
+
+    &:nth-child(5),
+    &:nth-child(6),
+    &:nth-child(7),
+    &:nth-child(8),
+    &:nth-child(9),
+    &:nth-child(10) {
+      .title > span,
+      .title b,
+      .title {
+        color: #170f9a;
       }
     }
   }
@@ -295,6 +340,7 @@ $theme: green;
         font-size: 16px;
         font-weight: 700;
         padding: 12px 0;
+        padding-bottom: 9px;
       }
       span:last-child {
         color: #d66538;
@@ -350,7 +396,7 @@ $theme: green;
       align-items: center;
       justify-content: space-between;
       padding: 0 16px;
-      margin-top: 24px;
+      margin-top: 12px;
       padding-bottom: 4px;
       border-bottom: 1px solid #c5c3c3;
       .date {
@@ -387,7 +433,7 @@ $theme: green;
         margin-top: 16px;
 
         p {
-          font-size: 14px;
+          font-size: 16px;
           line-height: 1.2em;
         }
 
@@ -545,10 +591,14 @@ $theme: green;
           line-height: 28px;
         }
 
-        p:nth-child(n + 2):nth-child(-n + 4) {
-          margin-top: 32px;
+        p + p {
+          margin-top: 12px;
         }
       }
     }
   }
+}
+
+strong.en-title {
+  font-family: "Playfair Display", serif !important;
 }
