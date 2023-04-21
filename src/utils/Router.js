@@ -7,12 +7,12 @@ import News2 from "../pages/News2";
 import News3 from "../pages/News3";
 
 const Router = createBrowserRouter([
+  // {
+  //   path: "/",
+  //   element: <Main />,
+  // },
   {
     path: "/",
-    element: <Main />,
-  },
-  {
-    path: "/1",
     element: <NewsSearchResult />,
   },
   {
