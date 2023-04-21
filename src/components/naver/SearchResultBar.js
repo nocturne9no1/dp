@@ -5,9 +5,9 @@ const SearchResultBar = () => {
   return (
     <div className="search-bar-wrap">
       <div className="input-row">
-        <div className="logo">N</div>
+        <div className="logo">H</div>
         <div className="input-area">
-          <input type="text" value="방송사고" />
+          <input type="text" value="JBC 방송사고" />
           <div className="x-button"></div>
         </div>
         <div className="mic-button">
