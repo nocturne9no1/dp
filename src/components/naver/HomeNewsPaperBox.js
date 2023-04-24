@@ -16,7 +16,9 @@ const HomeNewsPaperBox = ({ logo, paperName, newsList, image1, image2 }) => {
       </div>
       <ul className="news-list">
         {newsList.map((el, index) => (
-          <li key={el + index}>{el}</li>
+          <li key={el + index}>
+            <p>{el}</p>
+          </li>
         ))}
       </ul>
       <div className="image-wrap">

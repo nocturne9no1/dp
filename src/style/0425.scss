@@ -1,5 +1,17 @@
 $theme-color: #e47042;
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap");
+@mixin ellipsis($lines: 1) {
+  display: block;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* stylelint-disable-next-line order/properties-order */
+  -webkit-line-clamp: $lines;
+  /* stylelint-disable-next-line order/properties-order */
+  -webkit-box-orient: vertical;
+  white-space: initial;
+}
+
 .naver-home-header {
   background-color: #fff;
   .search-row {
@@ -189,6 +201,10 @@ $theme-color: #e47042;
       padding: 10px 0;
       font-size: 15px;
       line-height: 1.2em;
+
+      p {
+        @include ellipsis;
+      }
 
       & + li {
         border-top: 1px solid #c2c2c2;
