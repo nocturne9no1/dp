@@ -1,5 +1,13 @@
+import Header from "../../components/naver/0425pagetwo/Header";
+import Title from "../../components/naver/0425pagetwo/Title";
 const Page2 = () => {
-  return <div className="page2">page 2</div>;
+  return (
+    <div className="page2">
+      <Header />
+      <Title />
+      <div>content</div>
+    </div>
+  );
 };
 
 export default Page2;
