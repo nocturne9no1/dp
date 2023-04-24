@@ -1,4 +1,4 @@
-import { ReactComponent as IconSearch } from "../assets/search.svg";
+import { ReactComponent as IconSearch } from "../../assets/search.svg";
 import { useEffect } from "react";
 const News3 = () => {
   useEffect(() => {

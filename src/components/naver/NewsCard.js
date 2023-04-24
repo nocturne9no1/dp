@@ -20,7 +20,7 @@ const NewsCard = ({ newspaper, title, content, index, imgSource, time }) => {
           sessionStorage.setItem(index, index);
           setTimeout(
             () => {
-              navigate(`/news-${index}`);
+              navigate(`/0421/news-${index}`);
               a.style.opacity = 1;
             },
 
@@ -43,7 +43,7 @@ const NewsCard = ({ newspaper, title, content, index, imgSource, time }) => {
       </div>
       <strong className="title">{title}</strong>
       <div className="content-area">
-        <p className="content">{content}</p>
+        <div className="content">{content}</div>
         <div className="chroma"></div>
       </div>
     </NavLink>

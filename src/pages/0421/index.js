@@ -1,18 +1,20 @@
-import SearchResultBar from "../components/naver/SearchResultBar";
-import MenuOption from "../components/naver/MenuOption";
-import NewsCard from "../components/naver/NewsCard";
-import ETNLogo from "../assets/ETN.svg";
-import IncheoulLogo from "../assets/incheoul.svg";
-import DailyPatchLogo from "../assets/daily-patch.svg";
-import SunnyNewsLogo from "../assets/sunnynews.svg";
-import NewsNowInsideLogo from "../assets/news-now-inside.svg";
-import KBNLogo from "../assets/KBN.svg";
-import YaeInLogo from "../assets/YaeIn24.svg";
-import SBMCLogo from "../assets/SBMC.svg";
-import HJLogo from "../assets/HJnetwork.svg";
-import SeoungHyunLogo from "../assets/seounghyun.svg";
+import SearchResultBar from "../../components/naver/SearchResultBar";
+import MenuOption from "../../components/naver/MenuOption";
+import NewsCard from "../../components/naver/NewsCard";
+import ETNLogo from "../../assets/ETN.svg";
+import IncheoulLogo from "../../assets/incheoul.svg";
+import DailyPatchLogo from "../../assets/daily-patch.svg";
+import SunnyNewsLogo from "../../assets/sunnynews.svg";
+import NewsNowInsideLogo from "../../assets/news-now-inside.svg";
+import KBNLogo from "../../assets/KBN.svg";
+import YaeInLogo from "../../assets/YaeIn24.svg";
+import SBMCLogo from "../../assets/SBMC.svg";
+import HJLogo from "../../assets/HJnetwork.svg";
+import SeoungHyunLogo from "../../assets/seounghyun.svg";
 
-import "../style/searchResult.scss";
+import { Outlet } from "react-router-dom";
+
+import "../../style/searchResult.scss";
 
 const resultList = [
   {
@@ -278,7 +280,7 @@ const NewsSearchResult = () => {
       <MenuOption />
       <div className="news-list">
         {resultList.map((el, index) => (
-          <NewsCard {...el} index={index} key={el.title} />
+          <NewsCard {...el} index={index} key={el.title + index} />
         ))}
       </div>
     </div>

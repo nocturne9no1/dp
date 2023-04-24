@@ -7,7 +7,7 @@ const SearchResultBar = () => {
       <div className="input-row">
         <div className="logo">H</div>
         <div className="input-area">
-          <input type="text" value="JBC 방송사고" />
+          <input type="text" value="JBC 방송사고" readOnly />
           <div className="x-button"></div>
         </div>
         <div className="mic-button">

@@ -1,5 +1,5 @@
-import { ReactComponent as IconMenu } from "../assets/hamburgermenu.svg";
-import { ReactComponent as IconSearch } from "../assets/search.svg";
+import { ReactComponent as IconMenu } from "../../assets/hamburgermenu.svg";
+import { ReactComponent as IconSearch } from "../../assets/search.svg";
 import { useEffect } from "react";
 const News1 = () => {
   useEffect(() => {

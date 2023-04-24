@@ -1,10 +1,10 @@
-import MenuIcon from "../assets/icons8-menu.svg";
-import SearchIcon from "../assets/icons8-search.svg";
-import LogoIcon from "../assets/header-logo.svg";
-import ShareIcon from "../assets/share.png";
-import PrintIcon from "../assets/print.png";
-import PlusIcon from "../assets/plus-icon.png";
-import MinusIcon from "../assets/minus-button.png";
+import MenuIcon from "../../assets/icons8-menu.svg";
+import SearchIcon from "../../assets/icons8-search.svg";
+import LogoIcon from "../../assets/header-logo.svg";
+import ShareIcon from "../../assets/share.png";
+import PrintIcon from "../../assets/print.png";
+import PlusIcon from "../../assets/plus-icon.png";
+import MinusIcon from "../../assets/minus-button.png";
 import { useEffect } from "react";
 const News2 = () => {
   useEffect(() => {

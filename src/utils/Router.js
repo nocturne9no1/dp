@@ -1,31 +1,53 @@
+import React from "react";
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import Main from "../pages/Main";
-import NewsSearchResult from "../pages/NewsSearchResult";
-import React from "react";
-import News1 from "../pages/News1";
-import News2 from "../pages/News2";
-import News3 from "../pages/News3";
+// 0421
+import NewsSearchResult from "../pages/0421";
+import News1 from "../pages/0421/News1";
+import News2 from "../pages/0421/News2";
+import News3 from "../pages/0421/News3";
+// 0425
+import Page1 from "../pages/0425/PageOne";
+import Page2 from "../pages/0425/PageTwo";
 
 const Router = createBrowserRouter([
-  // {
-  //   path: "/",
-  //   element: <Main />,
-  // },
   {
     path: "/",
-    element: <NewsSearchResult />,
+    element: <Main />,
   },
   {
-    path: "/news-4",
-    element: <News1 />,
+    path: "/0421",
+    children: [
+      {
+        path: "",
+        element: <NewsSearchResult />,
+      },
+      {
+        path: "news-4",
+        element: <News1 />,
+      },
+      {
+        path: "news-5",
+        element: <News2 />,
+      },
+      {
+        path: "news-6",
+        element: <News3 />,
+      },
+    ],
   },
   {
-    path: "/news-5",
-    element: <News2 />,
-  },
-  {
-    path: "/news-6",
-    element: <News3 />,
+    path: "/0425",
+    children: [
+      {
+        path: "page-1",
+        element: <Page1 />,
+      },
+      {
+        path: "page-2",
+        element: <Page2 />,
+      },
+    ],
   },
 ]);
 
