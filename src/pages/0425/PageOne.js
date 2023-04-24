@@ -19,7 +19,7 @@ const newsList = [
     ],
     image1: {
       text: "지상파 아나운서 S씨, 촬영 중 난동 ‘충격’",
-      link: "page-2",
+      link: "/0425/page-2",
     },
     image2: {
       src: Image1,

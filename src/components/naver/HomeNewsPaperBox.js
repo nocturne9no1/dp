@@ -1,4 +1,5 @@
 import { ReactComponent as IcoDotMenu } from "../../assets/dot_menu.svg";
+import { Link } from "react-router-dom";
 
 const HomeNewsPaperBox = ({ logo, paperName, newsList, image1, image2 }) => {
   return (
@@ -25,7 +26,11 @@ const HomeNewsPaperBox = ({ logo, paperName, newsList, image1, image2 }) => {
           ) : (
             <div className="chroma" />
           )}
-          <p>{image1.text}</p>
+          {image1.link ? (
+            <Link to={image1.link}>{image1.text}</Link>
+          ) : (
+            <p>{image1.text}</p>
+          )}
         </div>
         <div className={`image-box`}>
           {image2.src ? (
