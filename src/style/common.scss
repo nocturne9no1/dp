@@ -409,3 +409,23 @@
     }
   }
 }
+
+.main-wrap {
+  padding: 20px;
+
+  h1 {
+    font-size: 24px;
+    font-weight: 700;
+
+    font-family: "roboto";
+  }
+
+  ul {
+    margin-top: 24px;
+    li {
+      padding: 12px 0;
+      font-size: 18px;
+      border-top: 1px solid #746e69;
+    }
+  }
+}
