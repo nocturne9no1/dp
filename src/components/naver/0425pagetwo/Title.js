@@ -19,7 +19,7 @@ const Title = () => {
       </div>
       <div className="title">
         <p>지상파 아나운서 S씨, 촬영 중 난동 ‘충격’</p>
-        <p>입력2023.04.21. 오후 7:28</p>
+        <p>입력2023.05.01. 오전 9:27</p>
         <div className="author">
           <div className="logo">
             <img src={Giza} alt="" />

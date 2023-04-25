@@ -5,11 +5,11 @@ const IconList = () => {
     <div className="news-detail-icon-row">
       <div className="left">
         <div className="like">
-          &#128514; <span>97</span>
+          &#128514; <span>197</span>
         </div>
         <div className="comment">
           <IcoChat />
-          <span>3</span>
+          <span>319</span>
         </div>
       </div>
       <div className="right">

@@ -22,18 +22,33 @@ const HomeNewsPaperBox = ({ logo, paperName, newsList, image1, image2 }) => {
         ))}
       </ul>
       <div className="image-wrap">
-        <div className={`image-box`}>
-          {image1.src ? (
-            <img src={image1.src} alt="news" />
-          ) : (
-            <div className="chroma" />
-          )}
-          {image1.link ? (
-            <Link to={image1.link}>{image1.text}</Link>
-          ) : (
-            <p>{image1.text}</p>
-          )}
-        </div>
+        {image1.link ? (
+          <Link to={image1.link} className="image-box">
+            {image1.src ? (
+              <img src={image1.src} alt="news" />
+            ) : (
+              <div className="chroma" />
+            )}
+            {image1.link ? (
+              <Link to={image1.link}>{image1.text}</Link>
+            ) : (
+              <p>{image1.text}</p>
+            )}
+          </Link>
+        ) : (
+          <div className={`image-box`}>
+            {image1.src ? (
+              <img src={image1.src} alt="news" />
+            ) : (
+              <div className="chroma" />
+            )}
+            {image1.link ? (
+              <Link to={image1.link}>{image1.text}</Link>
+            ) : (
+              <p>{image1.text}</p>
+            )}
+          </div>
+        )}
         <div className={`image-box`}>
           {image2.src ? (
             <img src={image2.src} alt="news" />
