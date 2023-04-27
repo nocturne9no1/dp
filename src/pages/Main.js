@@ -9,6 +9,10 @@ const linkList = [
     title: "0425 - 네이버 홈 뉴스 + 디테일",
     link: "/0425/page-1",
   },
+  {
+    title: "0507 - 사내 농구대회 기사",
+    link: "/0507/page-2",
+  },
 ];
 
 const Main = () => {

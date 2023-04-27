@@ -9,6 +9,8 @@ import News3 from "../pages/0421/News3";
 // 0425
 import Page1 from "../pages/0425/PageOne";
 import Page2 from "../pages/0425/PageTwo";
+// 0507
+import BasketballNews from "../pages/0507/BasketballNews";
 
 const Router = createBrowserRouter([
   {
@@ -46,6 +48,15 @@ const Router = createBrowserRouter([
       {
         path: "page-2",
         element: <Page2 />,
+      },
+    ],
+  },
+  {
+    path: "/0507",
+    children: [
+      {
+        path: "page-2",
+        element: <BasketballNews />,
       },
     ],
   },
