@@ -9,6 +9,8 @@ import News3 from "../pages/0421/News3";
 // 0425
 import Page1 from "../pages/0425/PageOne";
 import Page2 from "../pages/0425/PageTwo";
+// 0426
+import Radio from "../pages/0426";
 // 0507
 import BasketballNews from "../pages/0507/BasketballNews";
 
@@ -16,6 +18,10 @@ const Router = createBrowserRouter([
   {
     path: "/",
     element: <Main />,
+  },
+  {
+    path: "/0426",
+    element: <Radio />,
   },
   {
     path: "/0421",
