@@ -10,7 +10,8 @@ import News3 from "../pages/0421/News3";
 import Page1 from "../pages/0425/PageOne";
 import Page2 from "../pages/0425/PageTwo";
 // 0426
-import Radio from "../pages/0426";
+import RadioA from "../pages/0426/RadioA";
+import RadioB from "../pages/0426/RadioB";
 // 0507
 import BasketballNews from "../pages/0507/BasketballNews";
 
@@ -20,8 +21,12 @@ const Router = createBrowserRouter([
     element: <Main />,
   },
   {
-    path: "/0426",
-    element: <Radio />,
+    path: "/0426-a",
+    element: <RadioA />,
+  },
+  {
+    path: "/0426-b",
+    element: <RadioB />,
   },
   {
     path: "/0421",

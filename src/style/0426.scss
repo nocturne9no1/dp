@@ -104,6 +104,7 @@
       .middle-nav {
         margin-top: 12px;
         display: flex;
+        gap: 12px;
 
         .contents-wrap {
           position: relative;
@@ -130,6 +131,18 @@
             bottom: 0;
             left: 50%;
             transform: translate(-50%, 50%);
+          }
+        }
+
+        .contents-wrap:nth-child(2) {
+          .name {
+            border: none;
+            background-color: transparent;
+            color: white;
+          }
+          .hertz {
+            background-color: white;
+            color: black;
           }
         }
       }
@@ -321,6 +334,11 @@
           display: flex;
           .input {
             flex: 1;
+            display: flex;
+            align-items: center;
+            margin-left: 12px;
+            font-size: 12px;
+            color: #898989;
           }
           .send {
             width: 70px;

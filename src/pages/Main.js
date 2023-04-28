@@ -2,12 +2,16 @@ import { Link } from "react-router-dom";
 
 const linkList = [
   {
-    title: "0507 - 사내 농구대회 기사",
+    title: "0507 - 사내 농구대회 기사 (작업중)",
     link: "/0507/page-2",
   },
   {
-    title: "0426 - 라디오",
-    link: "/0426",
+    title: "0426 - 라디오 part 2",
+    link: "/0426-b",
+  },
+  {
+    title: "0426 - 라디오 part 1",
+    link: "/0426-a",
   },
   {
     title: "0425 - 네이버 홈 뉴스 + 디테일",

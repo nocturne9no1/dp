@@ -7,6 +7,8 @@ import { ReactComponent as Radio } from "../../assets/radio.svg";
 import { ReactComponent as Team } from "../../assets/team.svg";
 import { ReactComponent as Chat } from "../../assets/chat.svg";
 
+import RadioImage from "../../assets/image/0426/radio.png";
+
 const Left = ({ setStartChat }) => {
   return (
     <div className="radio-left">
@@ -32,14 +34,18 @@ const Left = ({ setStartChat }) => {
           <div className="name">LIKE FM</div>
           <span className="hertz">104.25</span>
         </div>
+        <div className="contents-wrap">
+          <div className="name">MOVE FM</div>
+          <span className="hertz">108.62</span>
+        </div>
       </div>
       <div className="img-area">
-        <img src="https://picsum.photos/500/1000" alt="" />
+        <img src={RadioImage} alt="" />
       </div>
       <div className="info-area">
         <span className="time">15:00~17:00</span>
         <span className="title">시 읽어주는 남자</span>
-        <span className="name">신재민</span>
+        <span className="name">김민규</span>
       </div>
       <div className="controller-area">
         <div className="volume">

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { ReactComponent as X } from "../../assets/x.svg";
 import { ReactComponent as DotMenu } from "../../assets/dot_menu.svg";
 
-const Dummy = [
+const type1 = [
   {
     name: "sdffwo",
     text: "모야모야 우리 밍디 어디갔찌?",
@@ -67,9 +67,41 @@ const Dummy = [
     name: "fellwwer",
     text: "자아~~ 새들의 세상으로 빠져~~봅시다~~",
   },
+  {
+    name: "Sdhrwls",
+    text: "???",
+  },
+  {
+    name: "Pshky",
+    text: "아.. 벌써 웃기다",
+  },
+  {
+    name: "Sho_ch",
+    text: "이거 아침 알람으로 딱인듯 ᄏᄏᄏᄏ",
+  },
+  {
+    name: "cdusalw",
+    text: "우리집 강아지가 막 짓어요...ᅮᅮ",
+  },
+  {
+    name: "dkaxgi",
+    text: "헐.. 이거 제목이 뭐에요?",
+  },
+  {
+    name: "Dogken",
+    text: "아이고 저런 ᄒᄒᄒ",
+  },
+  {
+    name: "Lllzzll_09",
+    text: "송기백 프로 맞았어ᄏᄏᄏᄏ",
+  },
+  {
+    name: "Cawqdg",
+    text: "밍디 그래서 언제와요?",
+  },
 ];
 
-const Dummy2 = [
+const type2 = [
   {
     name: "sdlawlqw",
     text: "뭐야. 왤캐 진지햌ᄏᄏᄏᄏᄏ 근데 잘햌ᄏᄏᄏᄏ",
@@ -102,9 +134,42 @@ const Dummy2 = [
     name: "cawqdg",
     text: "송기백 이 이름 석자 기억해두겠어ᄏᄏᄏᄏᄏ",
   },
+  {
+    name: "Sungin0423",
+    text: "밍디 보러왔다 기백님에게 빠져요",
+  },
+  {
+    name: "Einkoj",
+    text: "호흡 말투 한글자한글자마다 다웃겨ᄏᄏᄏ쿠ᅮᅮ",
+  },
+  {
+    name: "Bhua031",
+    text: "내새키도 아닌데 뿌듯하고 막 좋네 ᄒᄒ",
+  },
+  {
+    name: "Cjaalll",
+    text: "형.. 진짜 대단하다ᄃᄃᄃ",
+  },
+  {
+    name: "Dadam1004",
+    text: "ᄏᄏᄏᄏ와 이건 시리즈로 좀 나와줘라ᄏᄏᄏᄏ",
+  },
+  {
+    name: "Dignity",
+    text: "누가보면 우포늪에 사는줄 알겠어...",
+  },
+  {
+    name: "Pjh01200306",
+    text: "너무 웃겨서 울면서 들었네ᅮᅮᅮ",
+  },
+  {
+    name: "Cremi",
+    text: "갓기백!! 응원해! 송기백♥♥♥",
+  },
 ];
 
-const Right = ({ startChat, setStartChat }) => {
+const Right = ({ startChat, setStartChat, type }) => {
+  const Dummy = type === 1 ? type1 : type2;
   const [chatList, setChatList] = useState([]);
   useEffect(() => {
     if (startChat) {
@@ -167,7 +232,7 @@ const Right = ({ startChat, setStartChat }) => {
           </ul>
         </div>
         <div className="input-area">
-          <div className="input"></div>
+          <div className="input">실시간 글쓰기 (150자 내외)</div>
           <button className="send">전송</button>
         </div>
       </div>
