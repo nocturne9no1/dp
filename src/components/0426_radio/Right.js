@@ -99,6 +99,70 @@ const type1 = [
     name: "Cawqdg",
     text: "밍디 그래서 언제와요?",
   },
+  {
+    name: "memory",
+    text: "송기백? 아까 그 뉴스 사고 걔 아닌가?",
+  },
+  {
+    name: "whowhoyou",
+    text: "뭐야 오늘 누구냐",
+  },
+  {
+    name: "ezzzze9412",
+    text: "뉴스 사고 엉망이던데 ㅋㅋㅋ",
+  },
+  {
+    name: "hahadodo",
+    text: "헐 송기백이다",
+  },
+  {
+    name: "soso980310",
+    text: "아나운서라고? 발음 기대함~~~~~",
+  },
+  {
+    name: "mom86",
+    text: "안녕하세요^^",
+  },
+  {
+    name: "dksldy",
+    text: "이제 송기백이 쭉 함?",
+  },
+  {
+    name: "ghazjald",
+    text: "오랜만에 들으러 왔는데 밍디가 아니네",
+  },
+  {
+    name: "dhdldehdld",
+    text: "ㅋㅋㅋㅋㅋㅋㅋㅋ송기백이다",
+  },
+  {
+    name: "Qqoue",
+    text: "송기백이 누구냐",
+  },
+  {
+    name: "eopo1987",
+    text: "헐 목소리 좋다",
+  },
+  {
+    name: "rjrwjdgowna",
+    text: "밍디 어디 아픔?ㅠㅠ왜 못나왔는지 알려줘요ㅠ",
+  },
+  {
+    name: "tbtrkfrpdy",
+    text: "오늘도 출석 완료! 근데 밍디가 아니네?",
+  },
+  {
+    name: "suju",
+    text: "송기백 모른다고? 뉴스 안보는 티나쥬~",
+  },
+  {
+    name: "ddoopp912",
+    text: "오늘따라 애들이 보채네요ㅠㅠ 제가 신청한 시 읽어주세요",
+  },
+  {
+    name: "ghazjald",
+    text: "오랜만에 들으러 왔는데 밍디가 아니네",
+  },
 ];
 
 const type2 = [
@@ -165,6 +229,78 @@ const type2 = [
   {
     name: "Cremi",
     text: "갓기백!! 응원해! 송기백♥♥♥",
+  },
+  {
+    name: "sjtcm12",
+    text: "송기백 생각보다 웃기네 ㅋㅋㅋㅋㅋ",
+  },
+  {
+    name: "mom86",
+    text: "기백씨 덕분에 오늘 따라 라디오가 더 즐겁네요~^^",
+  },
+  {
+    name: "djqtdj",
+    text: "무슨 시를 이렇게 잘 읽냐 ᄏᄏᄏᄏᄏᄏ",
+  },
+  {
+    name: "qlalfdms",
+    text: "송기백임?",
+  },
+  {
+    name: "birdmania",
+    text: "와 방금 우리 집 앵무새가 반응함",
+  },
+  {
+    name: "wlqdprkffo",
+    text: "ᄏᄏᄏᄏᄏᄏᄏᄏᄏᄏᄏ",
+  },
+  {
+    name: "woohoo",
+    text: "아나운서라고? 어쩐지 딕션 대박이네",
+  },
+  {
+    name: "miyeon9595",
+    text: "ᄏᄏᄏᄏᄏᄏᄏᄏᄏᄏᄏᄏ기백이 고정 가보즈아~",
+  },
+  {
+    name: "wlqdprkffo",
+    text: "ᄏᄏᄏᄏᄏᄏᄏ",
+  },
+  {
+    name: "rleownd",
+    text: "다음엔 밍디랑 같이 나와줘요 ᄏᄏᄏᄏᄏ",
+  },
+  {
+    name: "wpdlxlqltl",
+    text: "기백이형 열심히 사네",
+  },
+  {
+    name: "Lovely",
+    text: "ᄏᄏᄏᄏᄏᄏᄏᄏ시 읽자마자 우리집 고양이 다 모임",
+  },
+  {
+    name: "dlekffld12",
+    text: "zzzzzzzzzzzzzzzzzzzzzzzzz",
+  },
+  {
+    name: "dntru88",
+    text: "ᄏᄏᄏᄏᄏᄏᄏ왜 이제 나왔어!!!!!!!",
+  },
+  {
+    name: "ioioi",
+    text: "몰래 듣고 있었는데ᄏᄏᄏᄏᄏ 웃느라 들킴",
+  },
+  {
+    name: "emfkak",
+    text: "오랜만에 맘껏 웃어보네요~^^",
+  },
+  {
+    name: "rkqhwmdk321",
+    text: "누구임? 밍디 어디감??",
+  },
+  {
+    name: "aksgrhksqn",
+    text: "프브스 선정 '우포늪 제일 잘 읽는 사람 1위'",
   },
 ];
 
@@ -257,7 +393,7 @@ const ChatBox = ({ name, text, sec }) => {
       </div>
       <p>{text}</p>
       <div className="bottom">
-        <span className="time">{sec}초 전</span>
+        {/* <span className="time">{sec}초 전</span> */}
       </div>
     </li>
   );
