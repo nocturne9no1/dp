@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const linkList = [
   {
-    title: "0507 - 사내 농구대회 기사 (작업중)",
+    title: "0507 - 사내 농구대회 기사",
     link: "/0507/page-2",
   },
   {
