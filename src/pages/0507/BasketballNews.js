@@ -7,10 +7,7 @@ const BasketballNews = () => {
       <div className="body">
         <div className="title">
           <div className="main-title">
-            <p>
-              ‘팩트볼’, JBC 사내 농구대회 우승 ... 득점왕은 보도국 송기백
-              아나운서
-            </p>
+            <p>JBC 사내 농구대회, 득점왕은 송기백 아나운서</p>
           </div>
           <div className="time-wrap">
             <div className="rl_time">2021-05-30 PM 2:31:16 | 조회 832</div>
