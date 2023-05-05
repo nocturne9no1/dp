@@ -970,6 +970,9 @@ strong.en-title {
           font-weight: 600;
           margin-top: 4px;
         }
+        p:nth-child(3) {
+          margin-top: 24px;
+        }
         p + p {
           margin-top: 14px;
         }
