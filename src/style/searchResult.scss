@@ -912,7 +912,8 @@ strong.en-title {
         p {
           font-size: 24px;
           font-weight: 400;
-          margin: 10px 0;
+          margin: 10px 0 20px;
+          line-height: 1.2em;
         }
       }
       .time-wrap {
@@ -964,6 +965,10 @@ strong.en-title {
         }
         p:nth-child(1) {
           font-weight: 600;
+        }
+        p:nth-child(2) {
+          font-weight: 600;
+          margin-top: 4px;
         }
         p + p {
           margin-top: 14px;
