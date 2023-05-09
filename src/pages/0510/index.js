@@ -40,7 +40,7 @@ const Index = () => {
       <div className="list-header">
         <strong>채용정보</strong>
         <span>
-          총 <span className="number">53</span>건
+          총 <span className="number">102</span>건
         </span>
       </div>
       <ul className="career-list">
@@ -168,6 +168,100 @@ const itemList = [
     content: (
       <span>
         [경제방송] 유튜브 성우/<b>아나운서</b> 채용/워라벨 최상
+      </span>
+    ),
+  },
+  {
+    name: "(주)실퍼파트너그룹",
+    end: "채용시까지",
+    content: (
+      <span>
+        [여의도 센터] 유튜브 주식전문가 공개채용.
+        <br />
+        <b>아나운서</b> / 쇼호스트 성우
+      </span>
+    ),
+  },
+  {
+    name: "레슨스픽",
+    end: "급구",
+    content: (
+      <span>
+        <b>아나운서</b> 아카데미 강사 모집.
+      </span>
+    ),
+  },
+  {
+    name: "햇방송",
+    end: "채용시까지",
+    content: <span>스마트TV 진행자(캐스터) 구인</span>,
+  },
+  {
+    name: "JHK티비(주)",
+    end: "상시채용",
+    content: <span>프리랜서 리포터 모집합니다</span>,
+  },
+  {
+    name: "SS미디",
+    end: "7/30까지",
+    content: <span>[프리랜서] 사내 교육 프로그램 MC/리포터/진행자 모집</span>,
+  },
+  {
+    name: "스마트ME",
+    end: "급구",
+    content: (
+      <span>
+        주식전문가 채용/<b>아나운서</b>,라이브커머스,쇼호스트
+      </span>
+    ),
+  },
+  {
+    name: "채널영상 FM",
+    end: "7/30까지",
+    content: (
+      <span>
+        채널영상과 함께할 신입 <b>아나운서를</b> 모집합니다.
+      </span>
+    ),
+  },
+  {
+    name: "예외뉴스",
+    end: "상시채용",
+    content: (
+      <span>
+        기자, <b>아나운서</b> 겸 리포터 모집
+      </span>
+    ),
+  },
+  {
+    name: "306(원TV)",
+    end: "채용시까지",
+    content: (
+      <span>
+        <b>아나운서</b>/리포터/방송취재기자/인터넷신문기자
+      </span>
+    ),
+  },
+  {
+    name: "탐스마치",
+    end: "급구",
+    content: <span>결혼식 축가, 행사, 사회, 이벤트 MC</span>,
+  },
+  {
+    name: "광커뮤니케이션",
+    end: "채용시까지",
+    content: (
+      <span>
+        <b>아나운서</b>/MC 신입 채용
+      </span>
+    ),
+  },
+  {
+    name: "스포츠솔루션즈",
+    end: "7/20까지",
+    content: (
+      <span>
+        축구뉴스 <b>아나운서</b> 채용
       </span>
     ),
   },
