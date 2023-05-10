@@ -159,6 +159,10 @@ $main-color: #285dff;
       padding: 16px 16px;
       border-top: 1px solid #adadad;
 
+      &:last-child {
+        border-bottom: 1px solid #adadad;
+      }
+
       .item-header {
         display: flex;
         justify-content: space-between;
@@ -181,6 +185,43 @@ $main-color: #285dff;
         b {
           font-weight: 600;
         }
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    padding: 12px 0px;
+    // border-top: 1px solid #a5a5a5;
+    justify-content: center;
+    gap: 8px;
+    padding-bottom: 30px;
+    margin: 0 12px;
+    margin-top: 16px;
+
+    div {
+      padding: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #a5a5a5;
+      width: 12px;
+      height: 12px;
+      font-size: 20px;
+      color: #828282;
+
+      svg {
+        flex-shrink: 0;
+        font-size: 20px;
+
+        path {
+          fill: #828282;
+        }
+      }
+
+      &:first-child {
+        background-color: $main-color;
+        color: #fff;
       }
     }
   }

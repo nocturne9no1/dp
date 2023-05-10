@@ -4,6 +4,8 @@ import IcoSearch from "../../assets/icons8-search.svg";
 import { ReactComponent as IcoArrow } from "../../assets/back-arrow.svg";
 import { ReactComponent as IcoFilter } from "../../assets/ico_filter.svg";
 import { ReactComponent as IcoTV } from "../../assets/ico_tv.svg";
+import { ReactComponent as IcoChev } from "../../assets/ico_chevron_right.svg";
+import { ReactComponent as IcoChevDouble } from "../../assets/ico_double_chevron_right.svg";
 
 import "../../style/0510.scss";
 
@@ -13,7 +15,7 @@ const Index = () => {
       <div className="app-header">
         <img src={MenuIcon} alt="" className="header-icon" />
         <div className="logo">
-          <span>DAMEDIA</span>
+          <span>DANMEDIA</span>
           <IcoTV />
         </div>
       </div>
@@ -48,6 +50,19 @@ const Index = () => {
           <ListItem {...el} key={el.name} />
         ))}
       </ul>
+      <div className="footer">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>
+          <IcoChev />
+        </div>
+        <div>
+          <IcoChevDouble />
+        </div>
+      </div>
     </div>
   );
 };
@@ -102,7 +117,7 @@ const itemList = [
     ),
   },
   {
-    name: "몰온",
+    name: "몰온 스피치",
     end: "상시채용",
     content: (
       <span>
@@ -149,7 +164,7 @@ const itemList = [
     ),
   },
   {
-    name: "더 오리진",
+    name: "더 오리진스",
     end: "급구",
     content: <span>각종 행사, 결혼식 사회 진행할 행사MC 모집</span>,
   },
