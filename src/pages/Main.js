@@ -2,6 +2,10 @@ import { Link } from "react-router-dom";
 
 const linkList = [
   {
+    title: "0514 - 나무위키",
+    link: "/0514",
+  },
+  {
     title: "0510 - 다미디어 채용 앱",
     link: "/0510",
   },

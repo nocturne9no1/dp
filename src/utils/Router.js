@@ -16,6 +16,8 @@ import RadioB from "../pages/0426/RadioB";
 import BasketballNews from "../pages/0507/BasketballNews";
 // 0510
 import DaMedia from "../pages/0510";
+// 0514
+import Namu0514 from "../pages/0514";
 
 const Router = createBrowserRouter([
   {
@@ -76,6 +78,10 @@ const Router = createBrowserRouter([
   {
     path: "/0510",
     element: <DaMedia />,
+  },
+  {
+    path: "/0514",
+    element: <Namu0514 />,
   },
 ]);
 
