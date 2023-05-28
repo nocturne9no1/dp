@@ -18,6 +18,8 @@ import BasketballNews from "../pages/0507/BasketballNews";
 import DaMedia from "../pages/0510";
 // 0514
 import Namu0514 from "../pages/0514";
+// 0529
+import PageOne from "../pages/0529/PageOne";
 
 const Router = createBrowserRouter([
   {
@@ -82,6 +84,10 @@ const Router = createBrowserRouter([
   {
     path: "/0514",
     element: <Namu0514 />,
+  },
+  {
+    path: "/0529",
+    element: <PageOne />,
   },
 ]);
 

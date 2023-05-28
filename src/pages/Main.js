@@ -29,6 +29,10 @@ const linkList = [
     title: "0421 - 뉴스 리스트 + 뉴스 1, 2, 3",
     link: "/0421",
   },
+  {
+    title: "0529 - 풍백폰 기사",
+    link: "/0529",
+  },
 ];
 
 const Main = () => {
